@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Final Análisis de Datos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" type="image/png" href="images/logo.png">
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1>Análisis: Mercado Inmobiliario</h1> 
+							<p>Una presentación Interactiva</p>
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section id="first">
+						<header>
+							<h2>Busqueda de Datos</h2>
+						</header>
+						<div class="content">
+							<p> La <strong>extracción de datos</strong> se llevó a cabo usando la API de MercadoLibre, enfocándose en casas y departamentos en venta. Las áreas investigadas fueron CABA y GBA, Pinamar y Mar del Plata. En total, se extrajeron aproximadamente 140.000 publicaciones.</p>
+							<span class="image main"><img src="images/map.png" alt="" /></span>
+							<!-- <a href=""><img src="../images/mdq.png" alt="" /></a> -->
+							
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Limpieza de los Datos</h2>
+						</header>
+						<div class="content">
+							<p>Utilizamos <strong>gráficos de distribuciones</strong> y un poco de sentido común para detectar outliers. Al final de todo el proceso terminamos haciendo enfásis en limpiar datos que luego sirvieran para hacer buenos análisis visuales. Estos son los siguientes datos.</p>
+							<ul class="feature-icons">
+								<li class="icon solid fa-money-bill-alt">Precio en Dólares</li>
+								<li class="icon solid fa-warehouse">Tipo de Inmueble</li>
+								<li class="icon solid fa-house-damage">Condición</li>
+								<li class="icon solid fa-chart-area">Área Cubierta</li>
+								<li class="icon solid fa-map-marker-alt">Ubicación</li>
+								<li class="icon solid fa-bed">Cantidad de Habitaciones</li>
+							</ul>
+							<p>Estos datos también nos fueron útiles para generar modelos de Machine Learning para la predicción de precios de inmuebles.</p>
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Análisis Visual: orientación a los modelos</h2>
+						</header>
+						<div class="content">
+							<p>Usamos <strong>Power BI</strong> para representar visualmente a los datos. Los siguientes gráficos son interactivos y pueden acceder a ellos desde esta página.</p>
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>Distribuciones</h3>
+										<p>En CABA se concentran la mayoría de las publicaciones. La mayor parte de ellas se encuentran en los barrios: Caballito, Belgrano y Villa Urquiza.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="" class="landscape">
+												<iframe title="Publicaciones_por_Barrio - Page 1" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNTY2N2I0ZTUtZGI1Ni00MjMzLWE2MDctNzRmMDNiYTZhMTY1IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+											</a>
+											<a href="" class="landscape">
+												<iframe title="Distribuciones_BA - Page 1" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNDM2YmJkOGYtYjA5Yi00MDVlLTljNTEtNjU2MTNjZDA0ZTU5IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+											</a>
+										</div>
+									</div>
+								</section>
+
+								
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>Análisis de Barrios</h3>
+										<p>Definitivamente Palermo Chico y Puerto Madero son los barrios mas caros de Buenos Aires.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/barrio_publicaciones.png" class="landscape">
+												<iframe title="Precio_por_Barrio - Page 1" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjY1MjVjYWQtMTA3MS00NzdmLTg1MzAtMjNhZWQwZDAyMzVjIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+											</a>
+
+											<a href="images/barrio_publicaciones.png" class="landscape">
+												<iframe title="scatterplot_por_barrio - Page 1" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNzFjMmU3NjQtMWIxZS00ZGJmLTk4NDUtZmNmOGM4NmRiNTZmIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+											</a>
+										</div>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3>Mapa de Calor</h3>
+										<p>La mayor densidad de publicaciones se encuentra en CABA. Además, muchas de ellas con más de tres ambientes son de Recoleta, Palermo y Belgrano.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/08.jpg" class="portrait">
+
+												<iframe title="Heat_Map_BA - Page 1" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMjEwMDk1OGQtODk3MS00OGVhLTkzZDItN2QzMzA4MjkwMDlhIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+											
+											</a>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<header>
+										<h3>Mar del Plata vs Pinamar</h3>
+										<p>La mitad de los departamentos en Mar del Plata son monoambientes.</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/08.jpg" class="portrait"><iframe title="Sankey_Pina_MDQ - Page 1" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYWM5YjQ1NDYtMTAwNy00ZDE0LWFjZGEtZjQyYmU5NjFiZWI0IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe></a>
+
+											<a href="images/gallery/fulls/09.jpg" class="portrait"><iframe title="Distribuciones_Casas_MDQ_vs_PINA - Page 1" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjlhZDI5YzUtYTRjZS00MTgwLTljODQtNzBjMjI4ZWJmMmZhIiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe></a>
+										</div>
+									</div>
+								</section>
+
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Modelos de Predicción y Web App</h2>
+						</header>
+						<div class="content">
+							<p>Llevamos a cabo un <strong>Random Forest</strong> entrenado con más de 65.000 datos. Haciendo optimización de parámetros decidimos que la profundidad de las ramas sea de 30 y la cantidad de estimadores sea 60.</p>
+							
+							<div class="content">
+								<div class="gallery">
+									<a href="" class="landscape">
+										<iframe title="prediccion_vs_real - Page 1" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiMTJiZTRjZjktNzAxOC00ODdkLWI3NGQtZjYyMjNlZWU4Y2I0IiwidCI6IjNlMDUxM2Q2LTY4ZmEtNDE2ZS04ZGUxLTZjNWNkYzMxOWZmYSIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+									</a>
+								</div>
+							</div>
+
+
+							<p>Con este modelo obtuvimos un R<sup>2</sup> = 0.92 y un MSE = 28897. A partir de este modelo creamos una aplicación web que sirve para estimar el precio de una propiedad. </p>
+								
+							<p>Pueden encontrar esta aplicación en Github o ver un video de como funciona en Youtube. Todos los códigos se encuentran en Google Drive.</p>
+
+							<ul class="actions">
+								<li><a href="https://github.com/Bmcuevas/predictor_web_app" class="button primary icon brands fa-github" target = "_blank">Github</a></li>
+								<li><a href="https://drive.google.com/drive/folders/1EDMadKEHn_qz0IpSjfLa0cBhNa6qNRJ9?usp=sharing" class="button icon brands fa-google-drive">Google Drive</a></li>
+								<li><a href="#" class="button primary icon brands fa-youtube" target = "_blank">Youtube</a></li>
+							</ul>
+							
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Integrantes del Equipo</h2>
+						</header>
+						<div class="content">
+							<ul class="feature-icons">
+								<li class="icon solid fa-user-astronaut"><a href="https://brunocuevas.ml/" target = "_blank">Bruno Cuevas</a></li>
+								<li class="icon solid fa-user-secret"><a href="https://www.fernandoguastavino.tk/" target = "_blank">Fernando Guastavino</a></li>
+								<li class="icon solid fa-user-ninja"><a href="https://www.linkedin.com/in/marcos-de-aloysio-b04978222/" target = "_blank">Marcos de Aloysio</a></li>
+								<li class="icon solid fa-user-injured"><a href="https://www.linkedin.com/in/eugeniagarciacreus/" target = "_blank">Eugenia García Creus</a></li>
+								<li class="icon solid fa-user-tie" target = "_blank"><a href="https://www.linkedin.com/in/juan-segundo-del-boca-80725a1a5/">Juan Segundo del Boca</a></li>
+							</ul>
+						</div>
+					
+					</section>
+
+				<!-- Copyright -->
+					<div class="copyright">&copy; Predictor de Inmuebles</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
